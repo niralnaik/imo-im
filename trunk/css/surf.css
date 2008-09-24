@@ -1,0 +1,614 @@
+.itab_header
+{
+    float: left;
+    border: solid;
+    border-width: 1px 1px 0px 1px;
+    margin: 0pt .1em 0pt 0pt;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 12px;
+    background: lightblue;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+.itab_header_focus
+{
+    background: #006699;
+}
+
+.itab_header_activity
+{
+    background: #FF9900;
+}
+
+.itab_body
+{
+    clear: both;
+    border: 1px solid;
+    padding: .2em;
+}
+
+.itab_close
+{
+    padding-left: .3em;
+}
+
+/*Nifty Corners Cube CSS by Alessandro Fulciniti
+The following classes are added dinamically by javascript,
+and their use should be avoided in the markup */
+
+b.niftycorners,b.niftyfill{display:block}
+b.niftycorners *{display:block;height: 1px;line-height:1px;font-size: 1px;
+    overflow:hidden;border-style:solid;border-width: 0 1px}
+/*normal*/
+b.r1{margin: 0 3px;border-width: 0 2px}
+b.r2{margin: 0 2px}
+b.r3{margin: 0 1px}
+b.r4{height: 2px}
+b.rb1{margin: 0 8px;border-width:0 2px}
+b.rb2{margin: 0 6px;border-width:0 2px}
+b.rb3{margin: 0 5px}
+b.rb4{margin: 0 4px}
+b.rb5{margin: 0 3px}
+b.rb6{margin: 0 2px}
+b.rb7{margin: 0 1px;height:2px}
+b.rb8{margin: 0;height:2px}
+b.rs1{margin: 0 1px}
+/*transparent inside*/
+b.t1{border-width: 0 5px}
+b.t2{border-width: 0 3px}
+b.t3{border-width: 0 2px}
+b.t4{height: 2px}
+b.tb1{border-width: 0 10px}
+b.tb2{border-width: 0 8px}
+b.tb3{border-width: 0 6px}
+b.tb4{border-width: 0 5px}
+b.tb5{border-width: 0 4px}
+b.tb6{border-width: 0 3px}
+b.tb7{border-width: 0 2px;height:2px}
+b.tb8{border-width: 0 1px;height:2px}
+b.ts1{border-width: 0 2px}*
+{
+    font-size: inherit;
+    font-family: inherit;
+}
+
+html, body
+{
+    font-size: 12px;
+    font-family: arial, sans-serif;
+}
+
+/* textareas don't inherit font properties */
+textarea
+{
+    font-family: arial, sans-serif;
+    font-size: 12px;
+}
+
+/* fix ie's proportional button padding problem */
+button
+{
+    overflow: visible;
+    padding: 0em 0.5em;
+}
+
+ol, ul
+{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo
+{
+    float: left;
+}
+
+/* error */
+.error
+{
+  color: red;
+}
+
+/* loading */
+.loading_div
+{
+    background: lightblue;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Actions */
+.actions
+{
+    text-align: right;
+    padding-bottom: .25em;
+}
+
+.action
+{
+    color:#0000CC;
+    cursor:pointer;
+    text-decoration:underline;
+    white-space:nowrap;
+}
+
+.actions_divider
+{
+    border-top:1px solid lightblue;
+    font-size:0pt;
+    height:0pt;
+    width:100%;
+    clear: both;
+}
+
+/* System Console */
+.sys_div
+{
+  padding-bottom: .5em;
+}
+
+.sys_msgs
+{
+  font-weight: bold;
+}
+
+.sys_msg
+{
+  padding: .25em 2em;
+}
+
+/* Login Console */
+.signon_box
+{
+    background: lightblue;
+    float: left;
+    padding: 5px;
+}
+
+.proto_label
+{
+    margin-left: .2em;
+}
+
+/* Accounts Console */
+.accounts_console
+{
+  background-color: lightblue;
+  width: 300px;
+}
+
+.accounts_info
+{
+  padding: .5em;
+}
+
+.accounts_title
+{
+  float: left;
+}
+
+.accounts_signoff
+{
+  float: right;
+}
+
+.accounts_linkbtn
+{
+  float: right;
+  margin-right: .25em;
+}
+
+.accounts_table
+{
+  clear: both;
+  margin-bottom: .5em;
+}
+
+.account_uid
+{
+  margin-left: .2em;
+}
+
+/* Link Panel */
+.link_panel
+{
+    margin-top: 2em;
+    width: 300px;
+    background-color: lightblue;
+}
+
+/* Status Console */
+.st_console
+{
+  width: 175px;
+}
+
+.st_console .stext
+{
+  float: left;
+  height: 16px;
+  width: 155px;
+  border: 1px solid black;
+  color: gray;
+  overflow: hidden;
+  cursor: pointer;
+  background: white;
+  white-space: nowrap;
+}
+
+.st_console .mopen
+{
+  float: left;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: white;
+}
+
+.st_console .saved
+{
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  width: 200px;
+  clear: both;
+}
+
+.st_console .saved div
+{
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.st_console .btn
+{
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+/* Autocomplete */
+.yui-ac-content
+{
+  position:absolute;
+  width:100%;
+  border:1px solid #404040;
+  background:#fff;
+  text-align:left;
+  z-index:9050;
+}
+
+li.yui-ac-highlight
+{
+  background-color: #e5ecf9;
+}
+
+/* Buddy Searcher */
+.buddy_searcher
+{
+  padding-top: .5em;
+}
+
+.buddy_searcher .results
+{
+  position: absolute;
+  width: 200px;
+  cursor: pointer;
+}
+
+.buddy_searcher .sbox
+{
+  color: gray;
+  width: 200px;
+  border: 1px solid black;
+}
+
+/* itree blist */
+.blist_tree
+{
+  padding-left: .5em;
+  padding-right: .5em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.blist_group
+{
+  cursor:pointer;
+  font-weight: bold;
+}
+
+.blist_buddy
+{
+  cursor:pointer;
+  margin-top: .2em;
+  padding-left: 15px;
+  white-space: nowrap;
+}
+
+.blist_status
+{
+  font-size: 10px;
+  color: gray;
+  padding-left: 15px;
+  white-space: normal;
+}
+
+.blist_control_panel
+{
+  background: lightblue;
+  padding-top: .25em;
+  padding-bottom: .5em;
+  padding-left: .2em;
+}
+
+.blist_add_buddy
+{
+    float: right;
+    padding-right: .5em;
+}
+
+/* VC */
+.vc_console
+{
+    clear:both;
+    margin-bottom: .25em;
+}
+
+.vc_conv
+{
+    float: left;
+    padding-right: .25em;
+    padding-bottom: .25em;
+}
+
+.vc_close
+{
+    background: #006699;
+    text-align: right;
+    padding: .2em;
+}
+
+.vc_close_img
+{
+    cursor: pointer;
+}
+
+/* IM Conv */
+.im_buddy_info
+{
+  background: lightblue;
+  padding-bottom: .25em;
+}
+
+.im_buid
+{
+  font-weight: bold;
+}
+
+.im_actions
+{
+  background: lightblue;
+  padding-bottom: .25em;
+}
+
+.msg_box
+{
+  width: 100%;
+  overflow: auto;
+  border: 1px solid;
+}
+
+.msg_history
+{
+    height: 225px;
+    overflow: auto;
+}
+
+.msg_timestamp
+{
+    color: #777777;
+}
+
+
+.msg_box_fieldset
+{
+    border: none;
+    padding: 0px;
+}
+
+.im_typing
+{
+    font-size: 10px;
+}
+
+.del_buddy
+{
+    float: right;
+    background: lightblue;
+    padding-right: .5em;
+}
+
+
+/* IM Preview */
+.im_preview
+{
+    width: 85%;
+    height: 50px;
+    top: 0;
+    margin-top: .25em;
+    background: #FFEC8B;
+    border: 1px solid;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Add Buddy */
+.add_label
+{
+  font-weight: bold;
+}
+
+.add_info
+{
+  padding: .25em;
+}
+
+.add_buddy_console
+{
+    position: absolute;
+    top: 10pt;
+    margin: .5em;
+    width: 275px;
+    background: white;
+    border: 1px solid;
+}
+
+.auth_buddy_console
+{
+    position: absolute;
+    top: 10pt;
+    margin: .5em;
+    width: 275px;
+    background: white;
+    border: 1px solid;
+}
+
+.del_buddy_console
+{
+    position: absolute;
+    top: 10pt;
+    margin: .5em;
+    width: 275px;
+    background: white;
+    border: 1px solid;
+}
+
+/* Chooser */
+.choo_sel
+{
+  float: left;
+  height: 16px;
+  width: 175px;
+  border: 1px solid black;
+  overflow: hidden;
+  background: white;
+}
+
+.choo_mop
+{
+  float: left;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: white;
+}
+
+.choo_mop .btn
+{
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.choo_items
+{
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  width: 175px;
+  overflow: hidden;
+  cursor: pointer;
+  clear: both;
+  z-index: 10000; 
+}
+
+.choo_li
+{
+  white-space: nowrap;
+}
+
+/* Navigation Console */
+.nav_box
+{
+  padding-top: 1.5em;
+  width: 100%;
+}
+
+.nav_links a
+{
+    margin-left: 1em;
+}
+
+/* Sound */
+.sound_control
+{
+  padding-left: 6px;
+}
+
+/* surf mode */
+.surf_switch
+{
+    padding-bottom: .5em;
+}
+
+/* hints */
+.hint_link
+{
+    font-size: 16px;
+}
+
+.hint_link_exp
+{
+    margin-top: 1em;
+    width: 225px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.hint_action
+{
+    color:#0000CC;
+    cursor:pointer;
+    text-decoration:underline;
+    white-space:nowrap;
+    font-size: inherit;
+    font-size: 16px;
+}
+
+/* remember me */
+.rememberme
+{
+    padding-bottom: .5em;
+}
+
+.rememberme_tip
+{
+    border: 1px solid;
+    padding: .25em;
+    position: absolute;
+    background: #FFEC8B;
+    width: 165px;
+    top: 150px;
+    left: 170px;
+    cursor: pointer;
+}
+
+/* feedback */
+.feedback_message
+{
+  overflow-y: auto;
+}

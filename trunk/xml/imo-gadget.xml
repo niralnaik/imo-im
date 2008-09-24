@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs
+    title="IMO Web Messenger"
+    title_url="https://imo.im/surf.html"
+    height="600"
+    width="400"
+    author="imo"
+    thumbnail="http://imo.im/images/logo.gif"
+    author_email="feedback@imo.im"
+    author_location="Palo Alto, CA"
+    description="imo is a web messenger and video chat service. It lets you IM your buddies on AIM, Google Talk, MSN, Yahoo, MySpace, and Skype. It's fun, easy to use, and requires no downloads."
+    category="communication">
+    <Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html">
+  <![CDATA[
+  <script src="https://imo.im/js/preload.js?1221692038" type="text/javascript"></script>
+  <script src="https://imo.im/js/surf.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="https://imo.im/css/surf.css?1221692038" />
+  <link rel="shortcut icon" href="https://imo.im/images/favicon.ico" />
+
+  <script type="text/javascript">
+    var g_start_time = (new Date()).getTime();
+    gadgets.util.registerOnLoadHandler(IMO.UI.X.init);
+  </script>
+  ]]>
+</Content>
+</Module>
+
